@@ -1,4 +1,3 @@
-import '@splidejs/splide/css';
 import { Splide } from '@splidejs/splide';
 
 const menuToggle = document.getElementById('menu-toggle');
@@ -17,4 +16,8 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// new Splide( '.splide' ).mount();
+new Splide('.splide', {
+  arrows: false,
+  lazyLoad: 'nearby',
+}).mount();
+new Splide('.splide.splide2', { arrows: false, lazyLoad: 'nearby' }).mount();
