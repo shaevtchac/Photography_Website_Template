@@ -3,23 +3,128 @@
 @tailwind utilities;
 
 @layer base {
-  h2 {
-    @apply text-orangec font-bold text-lg text-center leading-tight;
+  * {
+    scroll-behavior: smooth;
   }
-  h3 {
-    @apply font-bold text-center mt-3 mb-1;
+  input,
+  textarea {
+    @apply w-full border border-black p-1;
+  }
+  label {
+    @apply uppercase;
+  }
+
+  img {
+    @apply block;
+  }
+  p {
+    @apply mx-auto max-w-[60ch] font-louis text-sm sm:text-base;
   }
   button {
-    @apply bg-orangec text-white rounded px-6 py-2 transition-all duration-500;
+    @apply mt-3 border border-black bg-transparent px-4 py-1 uppercase transition-all duration-500;
   }
 
   button:hover {
-    @apply shadow-lg scale-110 contrast-200;
+    @apply scale-105 shadow-lg contrast-200 duration-300;
   }
 }
 
 @layer components {
+  .dot {
+    @apply h-3 w-3 rounded-full bg-neutral-500;
+  }
+  .dot.active {
+    @apply bg-neutral-300;
+  }
+  .title-brush {
+    @apply text-center font-brushwell  text-5xl lg:text-7xl xl:text-8xl;
+  }
+  .title-redvelvet {
+    @apply text-center font-redvelvet text-3xl uppercase text-white lg:text-5xl xl:text-7xl;
+  }
+  .title-redvelvet2 {
+    @apply text-center  font-redvelvet text-neutral-800 md:text-xl;
+  }
+  .title-louis {
+    @apply text-center font-louis text-xl uppercase md:text-3xl;
+  }
 }
 
 @layer utilities {
+}
+
+.menu-button-container {
+  /* display: none; */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #dddddd;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+.menu-button {
+  top: 12px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+#menu-toggle:checked ~ ul {
+  display: flex !important;
+}
+
+@font-face {
+  font-family: 'Brushwell';
+  src: url('./fonts/Brushwell-4BBJD.ttf');
+}
+@font-face {
+  font-family: 'RedVelvet';
+  src: url('./fonts/RedVelvet-Regular.otf');
+}
+@font-face {
+  font-family: 'LouisGeorgeCafe';
+  src: url('./fonts/LouisGeorgeCafe.ttf');
+}
+@font-face {
+  font-family: 'NextArtLight';
+  src: url('./fonts/NextArtLight.otf');
 }

@@ -4,14 +4,340 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+
     <title>Garnier Vit C Krem pod oczy</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav
+      class="fixed z-10 w-full text-center text-2xl uppercase leading-10 text-white md:block md:bg-transparent md:py-0 md:text-sm lg:text-lg"
+    >
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container md:hidden" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul
+        class="hidden flex-col items-center bg-blacktr py-4 underline-offset-8 md:flex md:flex-row md:items-start md:justify-center md:gap-6 md:bg-transparent lg:gap-8"
+      >
+        <a href="#home">
+          <li class="hover:underline">home</li>
+        </a>
+        <a href="#about">
+          <li class="hover:underline">about</li>
+        </a>
+        <a href="#portfolio">
+          <li class="hover:underline">portfolio</li>
+        </a>
+        <a href="#blog">
+          <li class="hover:underline">blog</li>
+        </a>
+        <a href="#video">
+          <li class="hover:underline">video</li>
+        </a>
+        <a href="#testimonnials">
+          <li class="hover:underline">testimonnials</li>
+        </a>
+        <a href="#contact"> <li class="hover:underline">contact</li> </a>
+        <li class="w-7 md:w-5 lg:mt-1 lg:w-6">
+          <img
+            src="img/icon-search.svg"
+            alt="icon search"
+            class="w-full cursor-pointer"
+          />
+        </li>
+      </ul>
+    </nav>
+    <article id="home">
+      <header
+        class="relative grid place-items-center bg-[url(img/sh-1-BG.png)] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="mx-[10%] my-[12%]">
+          <img
+            src="img/sh-1-logo.png"
+            alt="logo silver swans"
+            class="mx-auto w-1/6"
+          />
+          <div class="mx-auto w-fit">
+            <p class="title-brush mb-3 w-fit text-white">Silver Swans</p>
+            <hr />
+          </div>
+          <h1 class="title-redvelvet mb-4 mt-8 normal-case text-white">
+            Love Story Photography
+          </h1>
+          <p class="text-center text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure
+          </p>
+          <div
+            class="right-4 top-1/2 mt-4 grid h-5 grid-cols-4 place-items-center gap-8 sm:absolute sm:mt-0 sm:h-auto sm:w-5 sm:-translate-y-1/2 sm:grid-cols-1 md:w-6"
+          >
+            <img
+              src="img/icon-twitter.svg"
+              alt="icon twitter"
+              class="w-5 sm:w-6"
+            />
+            <img
+              src="img/icon-google-plus.svg"
+              alt="icon google"
+              class="w-5 sm:w-6"
+            />
+            <img
+              src="img/icon-instagram.svg"
+              alt="icon instagram"
+              class="w-5 sm:w-6"
+            />
+            <img
+              src="img/icon-dribbble.svg"
+              alt="icon dribble"
+              class="w-5 sm:w-6"
+            />
+          </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </header>
+      <!-- ------------------------------------------------------------about---------------------------------------------------- -->
+      <section id="about" class="px-[10%] py-[5%]">
+        <h2 class="title-brush">About me</h2>
+        <div class="grid place-items-center sm:grid-cols-[35%_1fr]">
+          <img
+            src="img/sh-2-woman.png"
+            alt="picture of a woman"
+            class="mb-3 w-1/3 sm:mb-0 sm:w-3/4"
+          />
+          <div class="grid place-items-center">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure
+            </p>
+          </div>
+        </div>
+        <button class="mx-auto block w-fit">get to know me better</button>
+      </section>
+
+      <!-- ---------------------------------------------------portfolio================================================ -->
+      <section id="portfolio" class="relative pb-16">
+        <div
+          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-3-bg.png)] bg-cover bg-center bg-no-repeat p-4 md:aspect-[1366/416]"
+        >
+          <h2 class="title-brush">Portfolio</h2>
+          <div>
+            <h3 class="title-redvelvet mb-4 text-white">The Best of 2020</h3>
+            <hr />
+          </div>
+          <h4 class="title-redvelvet2 my-4">
+            After wedding, Engagement, Love Story, Wedding
+          </h4>
+          <button>more photos</button>
+        </div>
+        <div
+          class="mx-auto mt-12 grid w-10/12 items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-3"
+        >
+          <img src="img/sh-4-pic1.png" alt="" class="row-span-2" /><img
+            src="img/sh-4-pic2.png"
+            alt=""
+          /><img src="img/sh-4-pic3.png" alt="" class="row-span-2" /><img
+            src="img/sh-4-pic4.png"
+            alt=""
+            class="row-span-2"
+          /><img src="img/sh-4-pic5.png" alt="" class="row-span-2" /><img
+            src="img/sh-4-pic6.png"
+            alt=""
+            class="row-span-2"
+          /><img src="img/sh-4-pic7.png" alt="" />
+        </div>
+        <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
+
+      <!-- ________________________________________________________video____________________________________________________________________ -->
+
+      <section id="video">
+        <div
+          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-5-bg.png)] bg-cover bg-center bg-no-repeat p-4 md:aspect-[1366/412]"
+        >
+          <div>
+            <h2 class="title-redvelvet mb-4">video</h2>
+            <hr />
+          </div>
+          <h3 class="title-redvelvet2 mx-[15%] my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h3>
+        </div>
+        <div>
+          <img
+            src="img/sh-6-pic1.png"
+            alt=""
+            class="mx-auto mb-4 mt-8 w-10/12 sm:w-3/4"
+          />
+          <hr class="mx-auto mb-2 w-6 border-black" />
+          <p class="mb-5 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure
+          </p>
+        </div>
+        <div class="mx-auto flex w-10/12 flex-wrap justify-center gap-4">
+          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
+            <img src="img/sh-6-pic2.png" alt="" />
+            <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
+            <img src="img/sh-6-pic3.png" alt="" />
+            <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
+            <img src="img/sh-6-pic4.png" alt="" />
+            <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          </div>
+        </div>
+        <button class="mx-auto mt-6 block">more videos</button>
+      </section>
+      <hr class="mx-auto my-8 w-10/12 border-black" />
+
+      <section id="testimonnials">
+        <h2 class="title-brush">The Testimonnials</h2>
+        <h3 class="title-louis">What They Say</h3>
+        <div class="mx-auto mt-8 flex w-10/12 flex-wrap justify-center gap-8">
+          <div
+            class="relative mt-20 min-w-[200px] max-w-[250px] flex-1 border border-black p-4 text-center"
+          >
+            <img
+              src="img/sh-7-pic1.png"
+              alt=""
+              class="absolute -top-[20%] left-1/2 w-3/5 -translate-x-1/2"
+            />
+            <h4 class="mb-8 mt-[40%] font-redvelvet text-neutral-700">
+              Cassandra & Andreas
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea
+            </p>
+          </div>
+          <div
+            class="relative mt-20 min-w-[200px] max-w-[250px] flex-1 border border-black p-4 text-center"
+          >
+            <img
+              src="img/sh-7-pic2.png"
+              alt=""
+              class="absolute -top-[20%] left-1/2 w-3/5 -translate-x-1/2"
+            />
+            <h4 class="mb-8 mt-[40%] font-redvelvet text-neutral-700">
+              Aleksandra & Max
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea
+            </p>
+          </div>
+          <div
+            class="relative mt-20 min-w-[200px] max-w-[250px] flex-1 border border-black p-4 text-center"
+          >
+            <img
+              src="img/sh-7-pic3.png"
+              alt=""
+              class="absolute -top-[20%] left-1/2 w-3/5 -translate-x-1/2"
+            />
+
+            <h4 class="mb-8 mt-[40%] font-redvelvet text-neutral-700">
+              Angela & Jack
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+          </div>
+        </div>
+        <button class="mx-auto my-8 block">read more</button>
+      </section>
+
+      <!-- ------------------------------------------------------------contact---------------------------------------------------- -->
+
+      <section id="contact" class="mx-auto w-10/12 max-w-2xl pt-6">
+        <h2 class="title-brush">Contact me</h2>
+        <p class="title-louis mb-4 mt-2">get in touch</p>
+        <hr class="border border-black" />
+        <div class="mt-4 grid gap-4 md:grid-cols-2">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do
+              eiusmod tempor incididunt ut labore etdolore magna
+            </p>
+            <form action="#" class="mt-2 grid gap-4">
+              <label for="name"
+                >name: <br /><input type="text" name="" id="name" /></label
+              ><label for="subject"
+                >subject: <br /><input
+                  type="text"
+                  name=""
+                  id="subject" /></label
+              ><label for="message"
+                >message: <br />
+                <textarea name="" id="message" cols="30" rows="5"></textarea>
+              </label>
+              <button>Send</button>
+            </form>
+          </div>
+          <img src="img/sh-8-pic1.png" alt="" class="hidden md:block" />
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------footer---------------------------------------------------- -->
+
+      <footer
+        class="mt-8 bg-[url(./img/sh-9-bg.png)] bg-cover bg-center bg-no-repeat p-4"
+      >
+        <div class="my-8 flex justify-center gap-8">
+          <img src="./img/icon-facebook-f.svg" alt="" class="w-6" /><img
+            src="./img/icon-behance.svg"
+            alt=""
+            class="w-6"
+          /><img src="./img/icon-twitter.svg" alt="" class="w-6" /><img
+            src="./img/icon-instagram.svg"
+            alt=""
+            class="w-6"
+          /><img src="./img/icon-pinterest.svg" alt="" class="w-6" /><img
+            src="./img/icon-dribbble.svg"
+            alt=""
+            class="w-6"
+          />
+        </div>
+        <p class="w-1/2 text-center text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        </p>
+        <p class="mt-4 text-center text-white">
+          &copy; Copyrights
+          <a
+            href="http://free-psd-template.com"
+            target="_blank"
+            class="hover:text-neutral-400"
+            >free-psd-template.com</a
+          >
+        </p>
+      </footer>
+    </article>
+  </body>
 </html>

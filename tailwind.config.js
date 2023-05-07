@@ -11,7 +11,10 @@ module.exports = {
     },
 
     fontFamily: {
-      sans: ['Montserrat', 'sans-serif'],
+      brushwell: ['Brushwell', 'cursive'],
+      redvelvet: ['RedVelvet', 'serif'],
+      louis: ['LouisGeorgeCafe', 'sans'],
+      nextart: ['NextArtLight', 'sans'],
     },
     extend: {
       spacing: {
@@ -22,8 +25,7 @@ module.exports = {
         '4xl': '2rem',
       },
       colors: {
-        orangec: '#e9560d',
-        orangec_light: '#f3e383',
+        blacktr: '#000000dd',
       },
     },
   },

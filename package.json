@@ -2,8 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "source": "src/index.html",
+  "source": "./src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
@@ -12,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "parcel": "^2.8.3"
   },
   "devDependencies": {
     "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwindcss": "^3.3.2"
   }
 }
