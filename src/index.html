@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+    do eiusmod tempor incididunt ut labore"
+    />
     <title>Love Story Photography</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="splide.min.css" />
@@ -16,11 +20,7 @@
     >
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container md:hidden" for="menu-toggle">
-        <div
-          class="menu-button"
-          role="button"
-          aria-label="Menu toggle button"
-        ></div>
+        <div class="menu-button"></div>
       </label>
       <ul
         class="hidden flex-col items-center bg-blacktr py-4 underline-offset-8 md:flex md:flex-row md:items-start md:justify-center md:gap-6 md:bg-transparent lg:gap-8"
@@ -51,13 +51,14 @@
     </nav>
     <article id="home" class="mx-auto max-w-[1300px]">
       <header
-        class="splide bg-[url(img/sh-1-BG.webp)] bg-cover bg-center bg-no-repeat"
+        class="splide bg-[url(img/sh-1-BG-xs.webp)] bg-cover bg-center bg-no-repeat sm:bg-[url(img/sh-1-BG-sm.webp)] md:bg-[url(img/sh-1-BG-md.webp)] lg:bg-[url(img/sh-1-BG-lg.webp)] xl:bg-[url(img/sh-1-BG.webp)]"
         aria-label="Main page header"
       >
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide relative grid place-items-center">
               <div class="mx-[10%] my-[12%]">
+                bg-[url(img/sh-1-BG-xs.webp)]
                 <img
                   src="img/sh-1-logo.webp"
                   alt="logo silver swans"
@@ -136,14 +137,14 @@
       <!-- __________________________________________________-portfolio================================================ -->
       <section id="portfolio" class="relative pb-16">
         <div
-          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-3-bg.webp)] bg-cover bg-center bg-no-repeat p-4 md:aspect-[1366/416]"
+          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-3-bg-xs.webp)] bg-cover bg-center bg-no-repeat p-4 sm:bg-[url(./img/sh-3-bg-sm.webp)] md:aspect-[1366/416] md:bg-[url(./img/sh-3-bg-md.webp)] lg:bg-[url(./img/sh-3-bg-lg.webp)] xl:bg-[url(./img/sh-3-bg.webp)]"
         >
           <h2 class="title-brush">Portfolio</h2>
           <div>
-            <h3 class="title-redvelvet mb-4 text-white">The Best of 2020</h3>
+            <h3 class="title-redvelvet mb-3 text-white">The Best of 2020</h3>
             <hr />
           </div>
-          <h4 class="title-redvelvet2 my-4">
+          <h4 class="title-redvelvet2 my-3">
             After wedding, Engagement, Love Story, Wedding
           </h4>
           <button>more photos</button>
@@ -155,26 +156,74 @@
                 <div
                   class="mx-auto mt-12 grid w-10/12 items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-3"
                 >
-                  <img src="img/sh-4-pic1.webp" alt="" class="row-span-2" /><img
+                  <img
+                    src="img/sh-4-pic1.webp"
+                    srcset="
+                      img/sh-4-pic1.webp?width=250 250w,
+                      img/sh-4-pic1.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
+                    alt=""
+                    class="row-span-2"
+                  />
+                  <img
                     src="img/sh-4-pic2.webp"
+                    srcset="
+                      img/sh-4-pic2.webp?width=250 250w,
+                      img/sh-4-pic2.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
                     alt=""
-                  /><img
+                  />
+                  <img
                     src="img/sh-4-pic3.webp"
+                    srcset="
+                      img/sh-4-pic3.webp?width=250 250w,
+                      img/sh-4-pic3.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
                     alt=""
                     class="row-span-2"
-                  /><img
+                  />
+                  <img
                     src="img/sh-4-pic4.webp"
+                    srcset="
+                      img/sh-4-pic4.webp?width=250 250w,
+                      img/sh-4-pic4.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
                     alt=""
                     class="row-span-2"
-                  /><img
+                  />
+                  <img
                     src="img/sh-4-pic5.webp"
+                    srcset="
+                      img/sh-4-pic5.webp?width=250 250w,
+                      img/sh-4-pic5.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
                     alt=""
                     class="row-span-2"
-                  /><img
+                  />
+                  <img
                     src="img/sh-4-pic6.webp"
+                    srcset="
+                      img/sh-4-pic6.webp?width=250 250w,
+                      img/sh-4-pic6.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
                     alt=""
                     class="row-span-2"
-                  /><img src="img/sh-4-pic7.webp" alt="" />
+                  />
+                  <img
+                    src="img/sh-4-pic7.webp"
+                    srcset="
+                      img/sh-4-pic7.webp?width=250 250w,
+                      img/sh-4-pic7.webp           350w
+                    "
+                    sizes="(max-width: 349px) 350px, (min-width:350px) and (max-width:1000px) 250px, 350px"
+                    alt=""
+                  />
                 </div>
               </li>
               <li class="splide__slide grid place-items-center">
@@ -192,25 +241,27 @@
 
       <section id="video">
         <div
-          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-5-bg.webp)] bg-cover bg-center bg-no-repeat p-4 md:aspect-[1366/412]"
+          class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-5-bg-xs.webp)] bg-cover bg-center bg-no-repeat p-4 sm:bg-[url(./img/sh-5-bg-sm.webp)] md:aspect-[1366/412] md:bg-[url(./img/sh-5-bg-md.webp)] lg:bg-[url(./img/sh-5-bg-lg.webp)] xl:bg-[url(./img/sh-5-bg.webp)]"
         >
           <div>
-            <h2 class="title-redvelvet mb-4">video</h2>
+            <h2 class="title-redvelvet mb-3">video</h2>
             <hr />
           </div>
-          <h3 class="title-redvelvet2 mx-[15%] my-4">
+          <h3 class="title-redvelvet2 mx-[15%] my-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h3>
         </div>
         <div>
           <img
+            srcset="img/sh-6-pic1.webp?width=400 400w, img/sh-6-pic1.webp 936w"
+            sizes="(max-width: 530px) 400px, 936px"
             src="img/sh-6-pic1.webp"
             alt=""
             class="mx-auto mb-4 mt-8 w-10/12 sm:w-3/4"
           />
           <hr class="mx-auto mb-2 w-6 border-black" />
-          <p class="mb-5 text-center">
+          <p class="mb-5 w-10/12 text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -218,18 +269,18 @@
           </p>
         </div>
         <div class="mx-auto flex w-10/12 flex-wrap justify-center gap-4">
-          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
-            <img src="img/sh-6-pic2.webp" alt="" />
+          <div class="min-w-[250px] max-w-[350px] flex-1 text-center">
+            <img src="img/sh-6-pic2.webp" alt="" class="mx-auto" />
             <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
           </div>
-          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
-            <img src="img/sh-6-pic3.webp" alt="" />
+          <div class="min-w-[250px] max-w-[350px] flex-1 text-center">
+            <img src="img/sh-6-pic3.webp" alt="" class="mx-auto" />
             <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
           </div>
-          <div class="min-w-[250px] max-w-[400px] flex-1 text-center">
-            <img src="img/sh-6-pic4.webp" alt="" />
+          <div class="min-w-[250px] max-w-[350px] flex-1 text-center">
+            <img src="img/sh-6-pic4.webp" alt="" class="mx-auto" />
             <hr class="mx-auto mb-2 mt-4 w-6 border-black" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
           </div>
@@ -309,7 +360,7 @@
         <p class="title-louis mb-4 mt-2">get in touch</p>
         <hr class="border border-black" />
         <div class="mt-4 grid gap-4 md:grid-cols-2">
-          <div>
+          <div class="grid justify-between">
             <p>
               Lorem ipsum dolor sit amet,consectetur adipisicing elit,sed do
               eiusmod tempor incididunt ut labore etdolore magna
@@ -334,7 +385,11 @@
               <button>Send</button>
             </form>
           </div>
-          <img src="img/sh-8-pic1.webp" alt="" class="hidden md:block" />
+          <img
+            src="img/sh-8-pic1.webp?width=328"
+            alt=""
+            class="hidden md:block"
+          />
         </div>
       </section>
 
