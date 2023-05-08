@@ -12,7 +12,9 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
     navUl.style.backgroundColor = '#000000bb';
   } else {
-    navUl.style.backgroundColor = 'transparent';
+    if (!menuToggle.checked) {
+      navUl.style.backgroundColor = 'transparent';
+    }
   }
 });
 
