@@ -7,6 +7,10 @@ document.querySelectorAll('li').forEach((menuItem) =>
   })
 );
 
+const menuObserver = new IntersectionObserver((entries) => {
+  entries;
+});
+
 const navUl = document.querySelector('ul');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 100) {
