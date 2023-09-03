@@ -114,9 +114,10 @@
       </header>
       <!-- ____________________________________________________________about____________________________________________________ -->
       <section id="about" class="px-[10%] py-[5%]">
-        <h2 class="title-brush">About me</h2>
+        <h2 data-animation="fade-in" class="title-brush">About me</h2>
         <div class="grid place-items-center sm:grid-cols-[35%_1fr]">
           <img
+            data-animation="fade-from-left"
             srcset="
               img/sh-2-woman.webp?width=130 130w,
               img/sh-2-woman.webp           303w
@@ -126,7 +127,7 @@
             alt="picture of a woman"
             class="mb-3 w-1/3 sm:mb-0 sm:w-3/4"
           />
-          <div class="grid place-items-center">
+          <div data-animation="fade-from-right" class="grid place-items-center">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut laboreet dolore magna aliqua. Ut enim
@@ -135,7 +136,9 @@
             </p>
           </div>
         </div>
-        <button class="mx-auto block w-fit">get to know me better</button>
+        <button data-animation="fade-in" class="mx-auto block w-fit">
+          get to know me better
+        </button>
       </section>
 
       <!-- __________________________________________________-portfolio================================================ -->
@@ -143,15 +146,20 @@
         <div
           class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-3-bg-xs.webp)] bg-cover bg-center bg-no-repeat p-4 sm:bg-[url(./img/sh-3-bg-sm.webp)] md:aspect-[1366/416] md:bg-[url(./img/sh-3-bg-md.webp)] lg:bg-[url(./img/sh-3-bg-lg.webp)] xl:bg-[url(./img/sh-3-bg.webp)]"
         >
-          <h2 class="title-brush">Portfolio</h2>
+          <h2 data-animation="fade-in" class="title-brush">Portfolio</h2>
           <div>
-            <h3 class="title-redvelvet mb-3 text-white">The Best of 2020</h3>
-            <hr />
+            <h3
+              data-animation="fade-from-left"
+              class="title-redvelvet mb-3 text-white"
+            >
+              The Best of 2020
+            </h3>
+            <hr data-animation="fade-from-right" />
           </div>
-          <h4 class="title-redvelvet2 my-3">
+          <h4 data-animation="fade-in" class="title-redvelvet2 my-3">
             After wedding, Engagement, Love Story, Wedding
           </h4>
-          <button>more photos</button>
+          <button data-animation="fade-in">more photos</button>
         </div>
         <div class="splide splide2" role="group" aria-label="Pictures slider">
           <div class="splide__track">
@@ -248,10 +256,12 @@
           class="grid auto-rows-min place-items-center content-center bg-[url(./img/sh-5-bg-xs.webp)] bg-cover bg-center bg-no-repeat p-4 sm:bg-[url(./img/sh-5-bg-sm.webp)] md:aspect-[1366/412] md:bg-[url(./img/sh-5-bg-md.webp)] lg:bg-[url(./img/sh-5-bg-lg.webp)] xl:bg-[url(./img/sh-5-bg.webp)]"
         >
           <div>
-            <h2 class="title-redvelvet mb-3">video</h2>
-            <hr />
+            <h2 data-animation="fade-from-left" class="title-redvelvet mb-3">
+              video
+            </h2>
+            <hr data-animation="fade-from-right" />
           </div>
-          <h3 class="title-redvelvet2 mx-[15%] my-3">
+          <h3 data-animation="fade-in" class="title-redvelvet2 mx-[15%] my-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h3>
@@ -296,8 +306,12 @@
       <!-- ____________________________________________________________testimonials____________________________________________________ -->
 
       <section id="testimonnials">
-        <h2 class="title-brush">The Testimonnials</h2>
-        <h3 class="title-louis">What They Say</h3>
+        <h2 data-animation="fade-from-left" class="title-brush">
+          The Testimonnials
+        </h2>
+        <h3 data-animation="fade-from-right" class="title-louis">
+          What They Say
+        </h3>
         <div class="mx-auto mt-8 flex w-10/12 flex-wrap justify-center gap-8">
           <div
             class="relative mt-20 min-w-[200px] max-w-[250px] flex-1 border border-black p-4 text-center"
@@ -360,8 +374,10 @@
       <!-- ____________________________________________________________contact____________________________________________________ -->
 
       <section id="contact" class="mx-auto w-10/12 max-w-2xl pt-6">
-        <h2 class="title-brush">Contact me</h2>
-        <p class="title-louis mb-4 mt-2">get in touch</p>
+        <h2 data-animation="fade-from-right" class="title-brush">Contact me</h2>
+        <p data-animation="fade-from-left" class="title-louis mb-4 mt-2">
+          get in touch
+        </p>
         <hr class="border border-black" />
         <div class="mt-4 grid gap-4 md:grid-cols-2">
           <div class="grid justify-between">
